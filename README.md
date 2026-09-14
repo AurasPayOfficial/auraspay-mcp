@@ -29,6 +29,14 @@ claude mcp add --transport http --scope user auraspay https://mcp.auraspay.com/a
 
 Open `/mcp` inside Claude Code and complete authentication in the browser.
 
+### Cline
+
+```sh
+cline mcp add --transport http --yes auraspay https://mcp.auraspay.com/api/mcp
+```
+
+Complete OAuth in the browser when Cline prompts you to authorize AurasPay.
+
 ### Other clients
 
 Choose Streamable HTTP, paste the remote MCP URL, and select OAuth when prompted. The client must support remote Streamable HTTP MCP, OAuth with PKCE, and Dynamic Client Registration.
@@ -58,4 +66,3 @@ This public repository contains distribution metadata, client configuration and 
 ## Regulatory boundary
 
 AurasPay provides non-custodial software and technical infrastructure. AurasPay is not a bank, issuer, custodian or investment adviser. Availability can depend on jurisdiction and independent providers. Review the current legal pages above for details.
-
