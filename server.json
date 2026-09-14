@@ -3,10 +3,10 @@
   "name": "com.auraspay/merchant-payments",
   "title": "AurasPay Merchant MCP",
   "description": "Review AurasPay merchant payments and prepare payment links with scoped OAuth and human approval.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://auraspay.com/mcp",
   "repository": {
-    "url": "https://github.com/AurasPay/auraspay-mcp",
+    "url": "https://github.com/AurasPayOfficial/auraspay-mcp",
     "source": "github"
   },
   "icons": [
