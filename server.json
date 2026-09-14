@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.auraspay/merchant-payments",
+  "name": "com.auraspay/merchant-payments",
   "title": "AurasPay Merchant MCP",
   "description": "Review AurasPay merchant payments and prepare payment links with scoped OAuth and human approval.",
   "version": "0.1.0",
@@ -22,4 +22,3 @@
     }
   ]
 }
-
