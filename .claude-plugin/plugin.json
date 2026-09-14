@@ -1,0 +1,13 @@
+{
+  "name": "auraspay-mcp",
+  "version": "0.1.0",
+  "description": "Connect Claude Code to an AurasPay merchant account through scoped OAuth and human-approved actions.",
+  "author": {
+    "name": "AurasPay",
+    "url": "https://auraspay.com"
+  },
+  "homepage": "https://auraspay.com/mcp",
+  "repository": "https://github.com/AurasPay/auraspay-mcp",
+  "license": "MIT"
+}
+
