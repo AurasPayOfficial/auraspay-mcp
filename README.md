@@ -33,7 +33,7 @@ Open `/mcp` inside Claude Code and complete authentication in the browser.
 
 ### Visual Studio Code
 
-[Install AurasPay in VS Code](vscode:mcp/install?%7B%22name%22%3A%22auraspay%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.auraspay.com%2Fapi%2Fmcp%22%7D)
+[Install AurasPay in VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522auraspay%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fmcp.auraspay.com%252Fapi%252Fmcp%2522%257D)
 
 You can also install it from a terminal:
 
