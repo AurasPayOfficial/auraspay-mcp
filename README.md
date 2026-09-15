@@ -31,6 +31,27 @@ claude mcp add --transport http --scope user auraspay https://mcp.auraspay.com/a
 
 Open `/mcp` inside Claude Code and complete authentication in the browser.
 
+### Visual Studio Code
+
+[Install AurasPay in VS Code](vscode:mcp/install?%7B%22name%22%3A%22auraspay%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.auraspay.com%2Fapi%2Fmcp%22%7D)
+
+You can also install it from a terminal:
+
+```sh
+code --add-mcp '{"name":"auraspay","type":"http","url":"https://mcp.auraspay.com/api/mcp"}'
+```
+
+For a workspace installation, copy [`.vscode/mcp.json`](.vscode/mcp.json) into your project. Run **MCP: List Servers**, start `auraspay`, trust the server, and complete OAuth in the browser.
+
+### GitHub Copilot CLI
+
+```sh
+copilot mcp add --transport http auraspay https://mcp.auraspay.com/api/mcp
+copilot mcp list
+```
+
+Complete OAuth when prompted. To configure it manually for your user account, merge [`examples/github-copilot-mcp-config.json`](examples/github-copilot-mcp-config.json) into `~/.copilot/mcp-config.json`. The root [`.mcp.json`](.mcp.json) is also ready for project-level Copilot CLI use after folder trust is confirmed.
+
 ### Cursor
 
 [Add AurasPay to Cursor](https://cursor.com/link/mcp/install?name=auraspay&config=eyJ1cmwiOiJodHRwczovL21jcC5hdXJhc3BheS5jb20vYXBpL21jcCJ9)
