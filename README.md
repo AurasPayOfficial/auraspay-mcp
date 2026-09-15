@@ -52,6 +52,20 @@ copilot mcp list
 
 Complete OAuth when prompted. To configure it manually for your user account, merge [`examples/github-copilot-mcp-config.json`](examples/github-copilot-mcp-config.json) into `~/.copilot/mcp-config.json`. The root [`.mcp.json`](.mcp.json) is also ready for project-level Copilot CLI use after folder trust is confirmed.
 
+### Devin
+
+For Devin Local, which is the default agent in new Devin Desktop tabs:
+
+```sh
+devin mcp add --scope user auraspay https://mcp.auraspay.com/api/mcp
+devin mcp login auraspay
+devin mcp get auraspay
+```
+
+Complete OAuth in the browser when prompted. A copy-ready configuration for `~/.config/devin/mcp_config.json` is available at [`examples/devin-mcp_config.json`](examples/devin-mcp_config.json).
+
+Legacy Cascade uses the Windsurf configuration described below. Team administrators can also add AurasPay through **Settings > MCP Marketplace > Add Your Own**, select **HTTP** and **OAuth**, enter the remote MCP URL, save it, and run **Test listing tools**.
+
 ### Cursor
 
 [Add AurasPay to Cursor](https://cursor.com/link/mcp/install?name=auraspay&config=eyJ1cmwiOiJodHRwczovL21jcC5hdXJhc3BheS5jb20vYXBpL21jcCJ9)
@@ -70,7 +84,7 @@ For a manual installation, merge this entry into `~/.cursor/mcp.json` for all pr
 
 Open **Cursor > Customize > MCPs**, connect `auraspay`, and complete OAuth in the browser. Cursor Agent CLI users can run `cursor-agent mcp login auraspay` after saving the configuration.
 
-### Windsurf
+### Windsurf / legacy Devin Desktop Cascade
 
 Merge this entry into `~/.codeium/windsurf/mcp_config.json`:
 
@@ -84,7 +98,7 @@ Merge this entry into `~/.codeium/windsurf/mcp_config.json`:
 }
 ```
 
-Open the **MCPs** menu in Cascade (or **Settings > Cascade > MCP Servers**), select `auraspay`, and complete OAuth in the browser. A copy-ready configuration is available at [`examples/windsurf-mcp_config.json`](examples/windsurf-mcp_config.json).
+In Windsurf or legacy Cascade, open the **MCPs** menu (or **Settings > Cascade > MCP Servers**), select `auraspay`, and complete OAuth in the browser. A copy-ready configuration is available at [`examples/windsurf-mcp_config.json`](examples/windsurf-mcp_config.json).
 
 ### Cline
 
