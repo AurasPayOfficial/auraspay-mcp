@@ -106,7 +106,19 @@ In Windsurf or legacy Cascade, open the **MCPs** menu (or **Settings > Cascade >
 cline mcp add --transport http --yes auraspay https://mcp.auraspay.com/api/mcp
 ```
 
-Complete OAuth in the browser when Cline prompts you to authorize AurasPay.
+Complete OAuth in the browser when Cline prompts you to authorize AurasPay. The
+unauthenticated MCP endpoint intentionally returns `401 Unauthorized` together
+with OAuth discovery metadata; that response means the protected server is
+reachable and authentication must be completed, not that the service is down.
+
+For automated availability checks that do not complete OAuth, use:
+
+```text
+https://mcp.auraspay.com/health
+```
+
+It returns HTTP `200` with `{"live":true}` while the MCP gateway is available.
+See [`llms-install.md`](llms-install.md) for the complete Cline validation flow.
 
 ### Other clients
 
