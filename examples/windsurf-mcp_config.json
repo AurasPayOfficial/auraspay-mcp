@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "auraspay": {
+      "serverUrl": "https://mcp.auraspay.com/api/mcp"
+    }
+  }
+}

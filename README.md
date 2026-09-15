@@ -31,6 +31,40 @@ claude mcp add --transport http --scope user auraspay https://mcp.auraspay.com/a
 
 Open `/mcp` inside Claude Code and complete authentication in the browser.
 
+### Cursor
+
+[Add AurasPay to Cursor](https://cursor.com/link/mcp/install?name=auraspay&config=eyJ1cmwiOiJodHRwczovL21jcC5hdXJhc3BheS5jb20vYXBpL21jcCJ9)
+
+For a manual installation, merge this entry into `~/.cursor/mcp.json` for all projects, or into `.cursor/mcp.json` inside one project:
+
+```json
+{
+  "mcpServers": {
+    "auraspay": {
+      "url": "https://mcp.auraspay.com/api/mcp"
+    }
+  }
+}
+```
+
+Open **Cursor > Customize > MCPs**, connect `auraspay`, and complete OAuth in the browser. Cursor Agent CLI users can run `cursor-agent mcp login auraspay` after saving the configuration.
+
+### Windsurf
+
+Merge this entry into `~/.codeium/windsurf/mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "auraspay": {
+      "serverUrl": "https://mcp.auraspay.com/api/mcp"
+    }
+  }
+}
+```
+
+Open the **MCPs** menu in Cascade (or **Settings > Cascade > MCP Servers**), select `auraspay`, and complete OAuth in the browser. A copy-ready configuration is available at [`examples/windsurf-mcp_config.json`](examples/windsurf-mcp_config.json).
+
 ### Cline
 
 ```sh
