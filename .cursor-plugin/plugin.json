@@ -1,0 +1,24 @@
+{
+  "name": "auraspay-merchant-mcp",
+  "displayName": "AurasPay Merchant MCP",
+  "version": "0.1.1",
+  "description": "Connect Cursor to an AurasPay merchant account to review scoped payment activity and prepare payment links with OAuth and separate human approval for changes.",
+  "author": {
+    "name": "AurasPay",
+    "email": "support@auraspay.com"
+  },
+  "homepage": "https://auraspay.com/mcp",
+  "repository": "https://github.com/AurasPayOfficial/auraspay-mcp",
+  "license": "MIT",
+  "keywords": [
+    "payments",
+    "merchant-tools",
+    "commerce",
+    "fintech",
+    "reporting",
+    "oauth",
+    "mcp"
+  ],
+  "logo": "assets/auraspay-mcp-400.png",
+  "mcpServers": "mcp.json"
+}
