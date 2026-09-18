@@ -1,6 +1,7 @@
 # AurasPay Merchant MCP
 
 [![Smithery](https://smithery.ai/badge/mazenalshareef33/auraspay)](https://smithery.ai/servers/mazenalshareef33/auraspay)
+[![MCP Badge](https://lobehub.com/badge/mcp/auraspayofficial-auraspay-mcp)](https://lobehub.com/mcp/auraspayofficial-auraspay-mcp)
 
 AurasPay Merchant MCP connects compatible AI applications to an AurasPay merchant account through a hosted, OAuth-protected Model Context Protocol server.
 
