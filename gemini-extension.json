@@ -1,0 +1,13 @@
+{
+  "name": "auraspay-merchant-mcp",
+  "version": "0.1.2",
+  "description": "Connect Gemini CLI to an AurasPay merchant account through scoped OAuth and human-approved actions.",
+  "mcpServers": {
+    "auraspay": {
+      "url": "https://mcp.auraspay.com/api/mcp",
+      "type": "http",
+      "authProviderType": "dynamic_discovery",
+      "description": "Review scoped merchant payment activity and prepare payment links with separate human approval for changes."
+    }
+  }
+}

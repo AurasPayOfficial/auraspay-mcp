@@ -31,6 +31,16 @@ claude mcp add --transport http --scope user auraspay https://mcp.auraspay.com/a
 
 Open `/mcp` inside Claude Code and complete authentication in the browser.
 
+### Gemini CLI
+
+Install the AurasPay extension directly from the official public repository:
+
+```sh
+gemini extensions install https://github.com/AurasPayOfficial/auraspay-mcp
+```
+
+Restart Gemini CLI, run `/mcp auth auraspay`, and complete OAuth in the browser.
+
 ### Visual Studio Code
 
 [Install AurasPay in VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522auraspay%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fmcp.auraspay.com%252Fapi%252Fmcp%2522%257D)
