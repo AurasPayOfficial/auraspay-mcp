@@ -1,7 +1,7 @@
 {
-  "identifier": "auraspay-merchant-mcp",
+  "identifier": "auraspayofficial-auraspay-mcp",
   "name": "AurasPay Merchant MCP",
-  "version": "0.1.2",
+  "version": "1.0.1",
   "description": "Review scoped merchant payments and prepare payment links with OAuth and separate human approval for changes.",
   "homepage": "https://auraspay.com/mcp",
   "cloudEndpoint": "https://mcp.auraspay.com/api/mcp"
