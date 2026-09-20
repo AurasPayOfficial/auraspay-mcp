@@ -137,8 +137,6 @@ Choose Streamable HTTP, paste the remote MCP URL, and select OAuth when prompted
 
 ## Tools
 
-Tool availability is permission-aware. The authenticated `tools/list` response is authoritative for the current release and the scopes granted by the merchant. A tool listed below appears only when its required scope was requested during consent, granted by the merchant and enabled by AurasPay.
-
 Tool | Description
 --- | ---
 `auraspay_account_get` | Read the authenticated merchant profile.
@@ -182,6 +180,8 @@ Tool | Description
 `auraspay_api_key_create` | Approve one-time API-key creation and display the secret only inside AurasPay, never in AI output.
 `auraspay_webhook_create` | Review a public HTTPS destination before creating a webhook.
 `auraspay_webhook_test` | Review and send one signed test event without automatically retrying an uncertain delivery.
+
+Tool availability is permission-aware. The authenticated `tools/list` response is authoritative for the current release and the scopes granted by the merchant. A tool listed above appears only when its required scope was requested during consent, granted by the merchant and enabled by AurasPay.
 
 ## Safety model
 
