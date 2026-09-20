@@ -139,61 +139,49 @@ Choose Streamable HTTP, paste the remote MCP URL, and select OAuth when prompted
 
 Tool availability is permission-aware. The authenticated `tools/list` response is authoritative for the current release and the scopes granted by the merchant. A tool listed below appears only when its required scope was requested during consent, granted by the merchant and enabled by AurasPay.
 
-### Account and payments
-
-- `auraspay_account_get` — Read the authenticated merchant profile.
-- `auraspay_account_balance` — Read legacy dashboard counters; this is not a wallet balance.
-- `auraspay_supported_tokens` — List the assets and networks currently allowed for the account.
-- `auraspay_payments_list` — List owned payment requests with pagination.
-- `auraspay_payment_get` — Read one owned payment request.
-- `auraspay_payment_qr` — Retrieve the original stored QR image without regenerating it.
-- `auraspay_payment_invoice` — Retrieve a completed-payment receipt or platform-fee PDF when available.
-- `auraspay_invoice_settings` — Read invoice issuer settings without creating default records.
-- `auraspay_payments_export_csv` — Export a selected payment page as spreadsheet-safe CSV.
-- `auraspay_payments_analyze` — Analyze a selected page of payment activity.
-- `auraspay_payments_report` — Build a complete bounded report using creation-date and payment filters.
-- `auraspay_dashboard_stats` — Read owned payment counts and completed totals.
-- `auraspay_payment_create` — Prepare a payment link request for separate authenticated merchant approval.
-- `auraspay_payment_verify` — Verify an owned pending payment after its transaction signature is reviewed.
-
-### Merchant profile and preferences
-
-- `auraspay_profile_update` — Review profile changes before approving them in AurasPay.
-- `auraspay_merchant_qualify` — Review store and country details before recording merchant qualification.
-- `auraspay_preferences_get` — Read persisted notification, language, currency, theme and animation choices.
-- `auraspay_preferences_update` — Persist selected preferences after native review.
-- `auraspay_referrals_open` — Review before opening or initializing the owned referral program.
-
-### Wallets
-
-- `auraspay_ecosystem_overview` — Review linked wallets, cached balances and service readiness.
-- `auraspay_wallet_ownership_challenge` — Create a short-lived wallet ownership message to sign.
-- `auraspay_wallet_ownership_verify` — Verify the signature and save the exact receiving address.
-- `auraspay_wallet_disconnect` — Remove one verified receiving address from AurasPay.
-
-### Support
-
-- `auraspay_tickets_list` — List owned support tickets with pagination.
-- `auraspay_ticket_get` — Read one owned ticket and up to its first 200 messages.
-- `auraspay_assistant_conversation` — Read the latest open support conversation and its first 50 messages.
-- `auraspay_assistant_config` — Read assistant configuration availability; this is not a provider health check.
-- `auraspay_ticket_set_status` — Close or reopen one owned ticket after native review.
-- `auraspay_ticket_create` — Review and send a new support ticket in AurasPay.
-- `auraspay_ticket_reply` — Review and send a reply to an owned support ticket.
-- `auraspay_assistant_message` — Review and send one message to the support assistant or provider.
-
-### Integrations
-
-- `auraspay_plugins_list` — List official store-plugin downloads and documentation.
-- `auraspay_api_keys_list` — Read masked API-key metadata, never full keys or hashes.
-- `auraspay_webhooks_list` — Read webhook endpoint and delivery metadata, never secrets or destination URLs.
-- `auraspay_webhook_secret_info` — Check whether a legacy signing secret exists without exposing it.
-- `auraspay_merchant_setup_status` — Read recorded setup events; these are not proof of a live installation.
-- `auraspay_api_key_revoke` — Revoke one key after native review; integrations using it will stop.
-- `auraspay_webhook_revoke` — Revoke one endpoint after native review; notifications to it will stop.
-- `auraspay_api_key_create` — Approve one-time API-key creation and display the secret only inside AurasPay, never in AI output.
-- `auraspay_webhook_create` — Review a public HTTPS destination before creating a webhook.
-- `auraspay_webhook_test` — Review and send one signed test event without automatically retrying an uncertain delivery.
+Tool | Description
+--- | ---
+`auraspay_account_get` | Read the authenticated merchant profile.
+`auraspay_account_balance` | Read legacy dashboard counters; this is not a wallet balance.
+`auraspay_supported_tokens` | List the assets and networks currently allowed for the account.
+`auraspay_payments_list` | List owned payment requests with pagination.
+`auraspay_payment_get` | Read one owned payment request.
+`auraspay_payment_qr` | Retrieve the original stored QR image without regenerating it.
+`auraspay_payment_invoice` | Retrieve a completed-payment receipt or platform-fee PDF when available.
+`auraspay_invoice_settings` | Read invoice issuer settings without creating default records.
+`auraspay_payments_export_csv` | Export a selected payment page as spreadsheet-safe CSV.
+`auraspay_payments_analyze` | Analyze a selected page of payment activity.
+`auraspay_payments_report` | Build a complete bounded report using creation-date and payment filters.
+`auraspay_dashboard_stats` | Read owned payment counts and completed totals.
+`auraspay_payment_create` | Prepare a payment link request for separate authenticated merchant approval.
+`auraspay_payment_verify` | Verify an owned pending payment after its transaction signature is reviewed.
+`auraspay_profile_update` | Review profile changes before approving them in AurasPay.
+`auraspay_merchant_qualify` | Review store and country details before recording merchant qualification.
+`auraspay_preferences_get` | Read persisted notification, language, currency, theme and animation choices.
+`auraspay_preferences_update` | Persist selected preferences after native review.
+`auraspay_referrals_open` | Review before opening or initializing the owned referral program.
+`auraspay_ecosystem_overview` | Review linked wallets, cached balances and service readiness.
+`auraspay_wallet_ownership_challenge` | Create a short-lived wallet ownership message to sign.
+`auraspay_wallet_ownership_verify` | Verify the signature and save the exact receiving address.
+`auraspay_wallet_disconnect` | Remove one verified receiving address from AurasPay.
+`auraspay_tickets_list` | List owned support tickets with pagination.
+`auraspay_ticket_get` | Read one owned ticket and up to its first 200 messages.
+`auraspay_assistant_conversation` | Read the latest open support conversation and its first 50 messages.
+`auraspay_assistant_config` | Read assistant configuration availability; this is not a provider health check.
+`auraspay_ticket_set_status` | Close or reopen one owned ticket after native review.
+`auraspay_ticket_create` | Review and send a new support ticket in AurasPay.
+`auraspay_ticket_reply` | Review and send a reply to an owned support ticket.
+`auraspay_assistant_message` | Review and send one message to the support assistant or provider.
+`auraspay_plugins_list` | List official store-plugin downloads and documentation.
+`auraspay_api_keys_list` | Read masked API-key metadata, never full keys or hashes.
+`auraspay_webhooks_list` | Read webhook endpoint and delivery metadata, never secrets or destination URLs.
+`auraspay_webhook_secret_info` | Check whether a legacy signing secret exists without exposing it.
+`auraspay_merchant_setup_status` | Read recorded setup events; these are not proof of a live installation.
+`auraspay_api_key_revoke` | Revoke one key after native review; integrations using it will stop.
+`auraspay_webhook_revoke` | Revoke one endpoint after native review; notifications to it will stop.
+`auraspay_api_key_create` | Approve one-time API-key creation and display the secret only inside AurasPay, never in AI output.
+`auraspay_webhook_create` | Review a public HTTPS destination before creating a webhook.
+`auraspay_webhook_test` | Review and send one signed test event without automatically retrying an uncertain delivery.
 
 ## Safety model
 
